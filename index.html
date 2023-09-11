@@ -12,6 +12,103 @@
     <button class="btn btn-danger">CLICK ME 2</button>
     <button class="btn btn-warning">CLICK ME 3</button>
     <button class="btn btn-primary">CLICK ME 4</button>
+
+    <br>
+    <a href="clase6sept.html">CLASE 6 SEPT</a>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+
+    <br>
+
+    <label for="numero1">Ingrese el primer valor: </label>
+    <input type="number" name="" id="numero1">
+    <label for="numero2">Ingrese el segundo valor: </label>
+    <input type="number" id="numero2">
+    <br>
+    <!-- onclik Es un manejador de eventos
+    Le dispara el evento y se llama a la funcion sumar() -->
+    <button class="btn btn-primary" onclick="sumar()">SUMAR</button>
+    <button class="btn btn-primary" onclick="div()">DIVIDIR</button>
+
+    <br>
+
+    <!-- Fragmento de codigo en JS -->
+    <script>
+      let a = 'Hola ' + 2;
+      console.log(a);
+
+      for(var i = 0; i < 10; i++){
+        console.log(i);
+      }
+      console.log('Ultimo console log ' + i);
+
+      for(var i = 0; i < 5; i++){
+        console.log("2 x ", i, "es igual a : ", i*2);
+        console.log("Ahora vamos a calcular ", i+1);
+      }
+
+      console.log("Hola Mundo");
+      document.write("Ejemplo document.write ");
+      /*prompt("Ejemplo de prompt: ", "");*/
+
+      /*OBJETO*/
+      var persona = {
+        nombre: "Julio",
+        edad: 24,
+        estatura: 1.80,
+        ciudad: "Ibague"
+      }
+      console.log(persona);
+      console.log(persona.nombre);
+      console.log(persona.edad);
+      console.log(persona.estatura);
+
+      /*Para definir una funcion*/
+      function sumar1(x,y){
+        let resul = x+y;
+        return resul;
+      }
+
+      /*Funciones Declarativas*/
+      var nombre = function(nombre){
+        console.log('Hola $(nombre)');
+      }
+
+      /*Para sumar dos numeros con el label y el manejador de eventos onclick*/
+      function sumar(){
+        var uno = document.getElementById("numero1").value;
+        uno = parseInt(uno);
+        var dos = document.getElementById("numero2").value;
+        dos = parseInt(dos);
+        var resul = uno + dos;
+        alert(resul);
+      }
+
+      function div(){
+        var uno = document.getElementById("numero1").value;
+        uno = parseInt(uno);
+        var dos = document.getElementById("numero2").value;
+        dos = parseInt(dos);
+        var resul = uno % dos;
+        if(dos == 0){
+          resul=1;
+          alert("Como el denominador es igual a 0, el resultado es: " + resul);
+        } else{
+          alert(resul); 
+        }
+
+        /*TAREA: Hacer una calculadora incluyendo bootstrap*/
+      }
+    </script>
+    <br>
+
+    
+    <!-- <br>
+    Se utiliza cuando vamos a escoger una de muchas opciones
+    <input type="radio" name="" id="">
+    <br>  
+    Lo utilizamos cuando vamos a escoger varias opciones
+    <input type="checkbox" name="" id=""> -->
+    </body>
 </html>
