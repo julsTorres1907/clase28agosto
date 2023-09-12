@@ -12,9 +12,9 @@
         <input type="text" id="uno" placeholder="Ingrese aquí su nombre" onblur="puntoUno()">
         <br>
         <label for="lblApellido">Ingrese su apellido:</label>
-        <input type="text" id="inputApellido" placeholder="Ingrese aquí su apellido" onchange="puntoDos()">
+        <input type="text" id="inputApellido" placeholder="Ingrese aquí su apellido" onblur="puntoDos()">
         <br>
-        <button class="btn btn-success" disabled id="btnEnviar">ENVIAR</button>
+        <button id="btnEnviar" class="btn btn-success" disabled>ENVIAR</button>
         <br>
 
 
@@ -36,6 +36,7 @@
         <input type="email" name="" id="inputEmail" placeholder="E-mail">
         <br>
         <input onchange="validarPassword()" type="password" name="" id="inputPass1" placeholder="************" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*- ]).{8,11}$" required>
+        <br>
         <input onchange="validarPassword()" type="password" name="" id="inputPass2" placeholder="************" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%^&*- ]).{8,11}$" required>
     </div>
     <script src="asset/js/ejerFormulario.js"></script>

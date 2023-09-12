@@ -8,9 +8,9 @@ function puntoDos() {
     var apellido = document.getElementById("inputApellido");
     var btnEnviar = document.getElementById("btnEnviar");
     if(apellido.value.length > 0){
-        btnEnviar.disable = false;
+        btnEnviar.removeAttribute("disabled");
     } else {
-        btnEnviar.disable = true;
+        btnEnviar.disabled = true;
     }
 }
 
