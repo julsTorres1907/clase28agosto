@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2023-1S</title>
+    <link rel="stylesheet" href="./asset/css/parcial2023-1.css">
+</head>
+<body>
+    <header>
+        <article>
+            <h1>PARCIAL 2023-1S PROGRAMACIÓN CON TECNOLOGÍAS WEB</h1>
+        </article>
+    </header>
+    <main>
+        <section>
+            <img src="./asset/img/puroHueso.jpg" alt="">
+        </section>
+        <section>
+            <article>
+                <p> PARRAFO 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+                <p> PARRAFO 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+                <p> PARRAFO 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+                <p> PARRAFO 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+                <p> PARRAFO 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+                <p> PARRAFO 6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque dignissimos id delectus rem illo ullam ipsa. Quia ab, accusamus, ipsam id dolor nesciunt quisquam ut, cum natus dolore sequi.</p>
+            </article>
+        </section>
+        <section>
+            <form action="" method="post" class="formulario">
+                <ul>
+                    <li class="elemento-form">
+                        <label for="name">Ingrese su nombre:</label>
+                        <input type="text" name="name" id="user_name" class="inpForm" placeholder="Ingrese aquí su nombre" 
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios"
+                        onblur="validarNombre()">
+                    </li>
+                    <li class="elemento-form">
+                        <label for="email">Ingrese su correo electrónico:</label>
+                        <input type="email" name="email" id="user_email" class="inpForm" placeholder="Ingrese aquí su E-mail" title="E-mail incorrecto" 
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                    </li>
+                    <li class="elemento-form">
+                        <label for="edad">Ingrese su edad</label>
+                        <input type="number" name="edad" id="user_edad" class="inpForm" placeholder="Ingrese aquí su edad" required
+                        onblur="validarEdad()">
+                    </li>
+                    <li class="elemento-form-boton">
+                        <input type="submit" value="ENVIAR" class="in-btn" disabled id="inpEnviar">
+                        <input type="reset" class="in-btn" id="inp-reset" disabled>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="link_inicio">
+            <a href="./index.html">VOLVER INICIO</a>
+        </section>
+    </main>
+    <script src="./asset/js/parcial2023-1.js"></script>
+</body>
+</html>

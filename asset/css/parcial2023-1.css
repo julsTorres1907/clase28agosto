@@ -1,0 +1,54 @@
+*{
+    background-color: #F8F0E5;
+}
+
+.formulario{
+    margin: 0 auto;
+}
+
+.elemento-form{
+    list-style-type: none;
+    display: grid;
+    place-content: inherit;
+    padding: .5rem;
+}
+
+.inpForm{
+    padding: .5rem;
+}
+
+.elemento-form-boton{
+    list-style: none;
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-btn {
+    padding: .5rem 2rem;
+    margin: .5rem 2rem;
+    border-radius: .5rem;
+}
+
+.link_inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link_inicio a{
+    text-decoration: none;
+    color: #A73121;
+    border: 2px solid #A73121;
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+
+
